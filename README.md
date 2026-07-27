@@ -23,7 +23,7 @@ The database system is designed to:
 
 ## Database Entities
 
-The database contains five main tables:
+The database contains five main tables.
 
 ### Patients
 
@@ -129,4 +129,132 @@ Normalization helped to:
 - draw.io / diagrams.net
 - Microsoft Word
 - Ubuntu Linux
-- 
+
+## How to Run the Database
+
+### 1. Install MySQL
+
+```bash
+sudo apt update
+sudo apt install mysql-server
+```
+
+### 2. Start MySQL
+
+```bash
+sudo systemctl start mysql
+```
+
+### 3. Clone the Repository
+
+```bash
+git clone git@github.com:alex-njugi/APT1050UC_Project_676410.git
+```
+
+Enter the project folder:
+
+```bash
+cd APT1050UC_Project_676410
+```
+
+### 4. Run the SQL Script
+
+```bash
+sudo mysql < green_valley_medical_centre.sql
+```
+
+### 5. Open MySQL
+
+```bash
+sudo mysql
+```
+
+Select the database:
+
+```sql
+USE green_valley_medical_centre;
+```
+
+Display the tables:
+
+```sql
+SHOW TABLES;
+```
+
+## Sample Data
+
+The database contains:
+
+- 10 patients
+- 5 doctors
+- 15 appointments
+- 15 treatments
+- 15 initial payment records
+
+## Business Intelligence Queries
+
+The project includes SQL queries that answer the following management questions:
+
+1. Which doctor attended the highest number of patients?
+2. Which patients have outstanding payments?
+3. What is the total revenue collected?
+4. Which treatment generated the highest income?
+5. Which appointments are scheduled within the next seven days?
+
+The queries demonstrate:
+
+- `JOIN`
+- `GROUP BY`
+- `ORDER BY`
+- Aggregate functions
+- Subqueries
+
+## Transaction Management
+
+The project demonstrates transaction management using:
+
+```sql
+START TRANSACTION;
+COMMIT;
+ROLLBACK;
+```
+
+`COMMIT` permanently saves a successful transaction, while `ROLLBACK` reverses incomplete changes if an operation fails.
+
+## Entity Relationship Diagram
+
+The ERD shows the relationships between Patients, Doctors, Appointments, Treatments and Payments.
+
+![Green Valley Medical Centre ERD](Green_Valley_Medical_Centre_ERD.png)
+
+## Project Report
+
+The complete Microsoft Word report contains:
+
+- Business requirements analysis
+- Database design
+- Entity Relationship Diagram
+- Normalization from UNF to 3NF
+- SQL implementation
+- Genuine MySQL query screenshots
+- Transaction management
+- Project reflection
+
+## Repository
+
+GitHub repository:
+
+`https://github.com/alex-njugi/APT1050UC_Project_676410`
+
+## Author
+
+**Alex Njugi Karanja**
+
+- Student ID: **676410**
+- Course: **APT1050 Database Systems**
+- Lecturer: **Jane Muchiri**
+- Submission date: **8 August 2026**
+
+## Academic Purpose
+
+This project was developed for educational purposes as part of the APT1050 Database Systems coursework.
