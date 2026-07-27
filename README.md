@@ -225,7 +225,7 @@ ROLLBACK;
 
 The ERD shows the relationships between Patients, Doctors, Appointments, Treatments and Payments.
 
-![Green Valley Medical Centre ERD](Green%20Valley%20Medical%20Centre%20ERD.drawio.png)
+![Green Valley Medical Centre ERD](images/Green%20Valley%20Medical%20Centre%20ERD.drawio.png)
 
 ## Project Report
 
